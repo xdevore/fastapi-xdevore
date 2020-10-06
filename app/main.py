@@ -4,7 +4,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-current_time = datetime.now()
+current_time = datetime.datetime(2015, 5, 5)
 
 @app.get("/PST/")
 def pacific_time(current_time):
