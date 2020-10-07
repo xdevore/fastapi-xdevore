@@ -4,6 +4,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+time = { "Time in PST: " : datetime.now() }
+
 @app.get("/")
 def current_time():
-    return { "Time in PST" : datetime.now() }
+    return time
