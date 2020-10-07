@@ -6,4 +6,4 @@ app = FastAPI()
 
 @app.get("/")
 def current_time():
-    return "Time in PST: " : datetime.now()
+    return "Time in PST: " + datetime.now()
