@@ -8,4 +8,4 @@ app = FastAPI()
 def pacific_time():
     pacific = pytz.timezone('US/Pacific')
     d = datetime.datetime.now(pacific)
-    print d.tzinfo
+    return { d.tzinfo }
