@@ -3,13 +3,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-time = { "Current Time: " : datetime.now() }
-
-@app.get("/get time/")
-def current_time():
-    return time
+time = datetime.now()
 
 @app.get("/")
 def get_current_time():
-    final = time.get("Current Time: ")
-    return final
+    return time
