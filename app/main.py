@@ -10,4 +10,4 @@ current_time = datetime.datetime(2015, 5, 5)
 def pacific_time(current_time):
     pacific_tzinfo = pytz.timezone("US/Pacific")
     pacific_time = current_time.astimezone(pacific_tzinfo)
-    return { "Time in PST": pacific_time }
+    print({ "Time in PST": pacific_time })
