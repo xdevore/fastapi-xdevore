@@ -5,6 +5,6 @@ app = FastAPI()
 
 time = datetime.now()
 
-@app.get("/")
-def get_current_time():
-    return time
+def find_month():
+    if time[5] == 1:
+        return "Yes"
