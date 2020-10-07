@@ -1,12 +1,9 @@
-from datetime import datetime
 from fastapi import FastAPI
+import math
 
 app = FastAPI()
 
-time = datetime.now()
-
-def find_month():
-    if time[5] == 1:
-        return "ok"
-    else:
-        return "no"
+def x_to_the_e():
+    value = input("What exponent would you like to choose?")
+    intValue = int(value)
+    return math.exp(intValue)
