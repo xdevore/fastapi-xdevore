@@ -6,8 +6,6 @@ app = FastAPI()
 
 @app.get("/PST/")
 def pacific_time():
-    date_format='%m_%d_%Y_%H_%M_%S_%Z'
-    date = datetime.now(tz=pytz.utc)
-    date = date.astimezone(timezone('US/Pacific'))
-    pstDateTime=date.strftime(date_format)
-    return pstDateTime
+    pacific = pytz.timezone('US/Pacific')
+    d = datetime.datetime.now(pacific)
+    print d.tzinfo
