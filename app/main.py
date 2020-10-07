@@ -8,3 +8,5 @@ time = datetime.now()
 def find_month():
     if time[5] == 1:
         return "ok"
+    else:
+        return "no"
