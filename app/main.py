@@ -4,6 +4,6 @@ import math
 app = FastAPI()
 
 @app.get("/{id}")
-def x_to_the_e(id: str):
+def e_to_the_x(id: str):
     intValue = int(id)
-    return { "x to the power of e" : math.exp(intValue)}
+    return { "e to the power of x" : math.exp(intValue)}
