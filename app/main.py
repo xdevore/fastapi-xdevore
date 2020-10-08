@@ -3,7 +3,7 @@ import math
 
 app = FastAPI()
 
-def x_to_the_e():
-    value = input("What exponent would you like to choose?")
-    intValue = int(value)
-    return { "x to the e" : math.exp(intValue)}
+@app.get("/{id}")
+def x_to_the_e(id: str):
+    intValue = int(id)
+    return { "x to the power of e" : math.exp(intValue)}
